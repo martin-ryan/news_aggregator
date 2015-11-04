@@ -1,13 +1,30 @@
 // vars
 //
 //
+// colors
 $greybox: lightgrey;
 $dgreybox: grey;
 
+//
+// fonts
+
+$headline-text: 1.5rem; // 3 rem
+$secondary-headline: 1.2rem;
+$body-text: 1rem; // 1 rem
+$nav-item: 1.25rem;
+$sub-header: 1.20rem;
+$byline: .75rem;
+//
+$sans: 'Open Sans', sans-serif;
+$serif: 'Slabo 27px', serif;
+$funFont: 'Fredoka One', cursive;
+
 #wrapper {
   width: 100%;
+  min-width: 790px;
   height: auto;
   text-align: center;
+  vertical-align: top;
 }
 .header {
   display: inline-block;
@@ -20,7 +37,7 @@ $dgreybox: grey;
 #logo {
   width: 18%;
 }
-#twitterFeed {
+#container {
   width: 60%;
 }
 .login {
@@ -31,6 +48,7 @@ $dgreybox: grey;
 }
 
 #topNavWrapper {
+  vertical-align: top;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
@@ -45,12 +63,14 @@ $dgreybox: grey;
 }
 
 #contentWrapper {
+  vertical-align: top;
   width: 100%;
-  height: 450px;
+  height: 600px;
   text-align: center;
 }
 
 #column1 {
+  vertical-align: top;
   display: inline-block;
   width: 60%;
   height: 100%;
@@ -59,34 +79,65 @@ $dgreybox: grey;
 
 
 #feature_headline {
+  text-transform: uppercase;
+  font-size: $headline-text;
+  text-align: left;
   height: 30px;
   margin-bottom: 10px;
-  background-color: $greybox;
+  // background-color: $greybox;
 }
 
 #feature_image {
-  height: 250px;
+  background-image: url(img/feature_trump.jpg);
+  background-size: cover;
+  height: 400px;
   margin-bottom: 10px;
   background-color: $greybox;
 }
 
-#subfeatures {
+#subfeaturesWrapper {
+  width: 100%;
   height: 150px;
-  background-color: $greybox;
+
+}
+
+.subfeature {
+  display: inline-block;
+  width:30%;
+  margin-right: 2%;
+  height: 100%;
+  background-color: rgb(233, 233, 233);
+}
+
+.subfeature p{
+  text-align: left;
+  margin: 10px;
+}
+
+.subfeature h1{
+  font-size: $secondary-headline;
+  text-decoration: underline;
+  text-align: left;
+  margin: 10px;
 }
 
 #column2 {
+  vertical-align: top;
   display: inline-block;
+  text-align: left;
   width: 38%;
   height: 100%;
 
 }
 
 #articles_headline {
+  text-transform: capitalize;
+  font-size: $secondary-headline;
   float:right;
+  text-align: left;
   width: 98%;
   height: 100px;
-  background-color: $greybox;
+  // background-color: $greybox;
 }
 
 .article {
@@ -94,6 +145,19 @@ $dgreybox: grey;
   width: 90%;
   height: 100px;
   margin-top: 10px;
+}
+.articleNotch {
+  float: left;
+  display: inline-block;
+  width: 10%;
+  height: 100%;
+  margin-right: 2%;
+  background-color: $greybox;
+}
+.articleBody {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
   background-color: $greybox;
 }
 #footer {
