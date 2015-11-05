@@ -1,7 +1,7 @@
 # news_aggregator
 
 News Aggregator
-![wireframe](newsAggregator_component.jpg)
+![wireframe](newsAggregator_component.png)
 
 ![screenshot](NewsAggregator.png)
 
